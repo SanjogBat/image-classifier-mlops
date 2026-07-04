@@ -1,0 +1,11 @@
+==========================================
+
+SAVE THIS FILE AS: requirements.txt
+
+(Place this in your main image-classifier-mlops folder)
+
+==========================================
+
+STREAMING_CHUNK: Defining strictly versioned ML dependencies...
+
+... existing code ...
