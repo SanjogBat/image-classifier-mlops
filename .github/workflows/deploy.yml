@@ -1,11 +1,11 @@
-==========================================
-
-SAVE THIS FILE AS: deploy.yml
-
-(CRITICAL: Place this inside the .github/workflows/ folder)
-
-==========================================
-
-STREAMING_CHUNK: Defining the MLOps Continuous Deployment trigger...
-
-... existing code ...
+- name: Push to hub
+    env:
+      # HF_TOKEN is a secret password you generate on Hugging Face 
+      # and save in your GitHub Repository secrets.
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    run: |
+      git config --global user.email "bot@example.com"
+      git config --global user.name "GitHub Actions"
+      
+      # Replace 'your-username/your-space-name' below with your actual HuggingFace info
+      git push --force https://hf_username:$HF_TOKEN@huggingface.co/spaces/your-username/your-space-name main
