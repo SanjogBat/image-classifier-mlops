@@ -1,0 +1,11 @@
+==========================================
+
+SAVE THIS FILE AS: deploy.yml
+
+(CRITICAL: Place this inside the .github/workflows/ folder)
+
+==========================================
+
+STREAMING_CHUNK: Defining the MLOps Continuous Deployment trigger...
+
+... existing code ...
